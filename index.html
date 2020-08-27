@@ -39,14 +39,26 @@
 
 
     <div class="calculadora">
-        <input type="num" class="num1">
-        <input type="num" class="num2">
-        <input type="button" class="restar" value="restar">
-        <input type="button" class="sumar" value="sumar">
-        <input type="button" class="dividir" value="dividir">
-        <input type="button" class="multiplicar" value="multiplicar">
-        
+        <h2>Calculadora</h2>
+        <label for="">Numero 1</label>
+        <input type="number" class="num" id="num1">
+         <small id="mensajealertanumero1" class="mensaje-alerta-numero"></small>
+        <label for="">Numero 2</label>
+        <input type="number" class="num" id="num2">
+        <label for="">Resultado</label>
+        <input type="number" id="resultado" >
+
+        <div class="botones">
+            <input type="button" class="boton" id="restar" onclick="restar(event)" value="restar">
+            <input type="button" class="boton"  id="sumar" onclick="sumar(event)" value="sumar">
+            <input type="button" class="boton"  id="dividir" onclick="dividir(event)" value="dividir">
+            <input type="button" class="boton"   id="multiplicar" onclick="multiplicar(event)" value="multiplicar">
+            <input type="button" class="boton"   id="limpiar"  onclick="limpiar(event)" value="limpiar">
+            
+        </div>
+
     </div>
+  
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
