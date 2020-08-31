@@ -84,8 +84,6 @@ function limpiar(e){
     num1.value=''
     num2.value=''
     inputresult.value=''
-
-
 }
 
 

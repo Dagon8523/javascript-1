@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario-registro{
+    width: 40%;
+    margin:auto;
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.conte-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.conte-input > label{
+   margin-bottom: 7px;
+   color: green;
+}
+.conte-input input{
+    border: none;
+    padding: 10px 15px;
+    background-color: rgb(255, 249, 210);
+    border-radius: 10px;
+}
+.conte-input input:focus{
+    box-shadow: 2px 0px 30px rgb(23, 73, 73);
+}
+
+
+.boton-registro{
+    margin-top: 40px;
+    align-self: center;
+    border: none;
+    padding: 15px 22px;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
