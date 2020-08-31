@@ -45,4 +45,12 @@ body{
     padding: 15px 22px;
     border-radius: 10px;
     background-color: greenyellow;
+    cursor: pointer;
+}
+.boton-registro:hover{
+    transform:scale(1.1)
+}
+.alerta-validacion{
+    font-size: 10px;
+    color: red;
 }

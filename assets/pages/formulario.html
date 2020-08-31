@@ -7,26 +7,31 @@
     <title>Formulario con validacion</title>
 </head>
 <body>
-    <form class="formulario-registro" >
+    <form class="formulario-registro" onsubmit="validarformulario(event)" >
         <div class="conte-input">
-            <label for="">Nombre</label>
-            <input type="text" placeholder=" digita nombre" required>
+            <label for="" >Nombre</label>
+            <input type="text" id="nombre" placeholder=" digita nombre" >
+            <small class="alerta-validacion" id="mensaje-nombre"></small>
         </div>
         <div class="conte-input">
-            <label for="">Apellido</label>
-            <input type="text" placeholder="digita apellido" required>
+            <label for="" >Apellido</label>
+            <input type="text" id="apellido" placeholder="digita apellido" >
+            <small class="alerta-validacion" id="mensaje-apellido"></small>
         </div>
         <div class="conte-input">
-            <label for="">Correo</label>
-            <input type="email" placeholder="correo electronico " required>
+            <label for="" >Correo</label>
+            <input type="email" id="correo" placeholder="correo electronico " >
+            <small class="alerta-validacion" id="mensaje-correo"></small>
         </div>
-        <div class="conte-input">
-            <label for="">Contraseña</label>
-            <input type="password" placeholder="" required>
+        <div class="conte-input" >
+            <label for="" >Contraseña</label>
+            <input type="password" id="contraseña" placeholder="" >
+            <small class="alerta-validacion" id="mensaje-contraseña"></small>
         </div>
-        <div class="conte-input">
+        <div class="conte-input" >
             <label for="">Edad</label>
-            <input type="number" placeholder="numero edad" required>
+            <input type="number" id="edad" placeholder="numero edad" >
+            <small class="alerta-validacion" id="mensaje-edad"></small>
         </div>
         <input type="submit" value="Enviar" class="boton-registro">
     
