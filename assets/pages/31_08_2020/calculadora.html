@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <title>Calculadora 31 08 2020</title>
+</head>
+<body>
+    <div class="calculadora">
+        <h2>Calculadora</h2>
+        <label for="">Numero 1</label>
+        <input type="number" class="num" id="num1">
+         <small id="mensajealertanumero1" class="mensaje-alerta-numero"></small>
+        <label for="">Numero 2</label>
+        <input type="number" class="num" id="num2">
+        <label for="">Resultado</label>
+        <input type="number" id="resultado" >
+
+        <div class="caja-volver">
+            <a href="../../../index.html" class="boton-volver" value="Volver" >Volver</a>
+         
+        </div>
+
+        <div class="botones">
+            <input type="button" class="boton" id="restar" onclick="restar(event)" value="restar">
+            <input type="button" class="boton"  id="sumar" onclick="sumar(event)" value="sumar">
+            <input type="button" class="boton"  id="dividir" onclick="dividir(event)" value="dividir">
+            <input type="button" class="boton"   id="multiplicar" onclick="multiplicar(event)" value="multiplicar">
+            <input type="button" class="boton"   id="limpiar"  onclick="limpiar(event)" value="limpiar">
+        </div>
+
+    
+
+<script src="../../js/calculadora.js"></script>
+</body>
+</html>

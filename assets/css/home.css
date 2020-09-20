@@ -1,0 +1,20 @@
+.menu{
+    background-color: rgb(55, 125, 222);
+    
+   
+}
+.fila{
+    background-color: sandybrown;
+    height: 600px;
+}
+.encabezado{
+    background-color: springgreen;
+    height: 150px;
+}
+aside{
+    background-color: darkviolet;
+}
+footer{
+    background-color: brown;
+    height: 100px;
+}

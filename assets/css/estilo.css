@@ -47,10 +47,13 @@ body{
 }
 .calculadora input{
     border-radius: 10px;
+    padding: 20px;
+    font-style: oblique;
+    cursor: pointer;
    
 
 }
-.boton-registro{
+.boton-menu{
     text-decoration-line: none;
     padding: 9px;
     background-color: black;
@@ -61,6 +64,20 @@ body{
     margin: 10px;
     border-radius: 10px;
 }
-.boton-registro:hover{
+.boton-menu:hover{
     transform:scale(1.3)
 }
+.caja-volver{
+    position: absolute;
+    left: 10%;
+    bottom: 43%;
+}
+.boton-volver{
+   padding: 25px;
+   background-color: orange;
+   text-decoration-line: none;
+   font-size: 15px;
+   font-style: italic;
+   border-radius: 25px;
+}
+
