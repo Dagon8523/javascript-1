@@ -1,14 +1,30 @@
-const labelnombre = document.getElementById('nombrelabel')
-const labelnacion = document.getElementById('nacionlabel')
-const labeltrabajos = document.getElementById('trabajolabel')
+const tabla = document.getElementById('tablaUsuario')
+
+const artistastorage = ()=>{
+    const artistaguardado = JSON.parse(localStorage.getItem('artista'))
+    return artistaguardado
+}
+
+console.log(artistastorage())
+
+const listarartistas= ()=>{
+    if(localStorage.getItem('artista')!== null){
+        const datostabla = artistastorage().map((artista , item)=>
+
+             `
+             <tr>
+                  <th>${item+1}</th>
+                  <td>${artista.nombre}</td>
+                  <td>${artista.nacion}</td>
+                  <td>${artista.disco}</td>
+             </tr>
+             `
+        )
+        tabla.innerHTML = datostabla.join('')
+    }
+}
+
+listarartistas()
 
 
 
-let nombrealmacenado = localStorage.getItem('nombrestorage')
-let nacionalmacenada = localStorage.getItem('nacionstorage')
-let trabajoalmacenado = localStorage.getItem('trabajostorage')
-console.log(nombrealmacenado)
-
-labelnombre.innerText = nombrealmacenado
-labelnacion.innerText = nacionalmacenada
-labeltrabajos.innerText = trabajoalmacenado

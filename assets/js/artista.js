@@ -1,24 +1,7 @@
-
-
-const botonenviar = document.getElementById('botonenviar')
-const labelnombre = document.getElementById('nombrelabel')
-
-const formregistro = document.getElementById('formulario')
-
-formregistro.addEventListener('submit',(e)=>{
-    e.preventDefault()
-    const nombreartista = document.getElementById("inputnombre").value
-    const nacionartista = document.getElementById('inputnacionalidad').value
-    const trabajosartista = document.getElementById('inputtrabajos').value
-
-    const artista ={
-        nombre: nombreartista,
-        nacionalidad:nacionartista,
-        discos:trabajosartista,
+export class Artista{
+    constructor(nuevo){
+        this.nombre = nuevo.nombre
+        this.nacion = nuevo.nacion
+        this.disco = nuevo.disco
     }
-    console.log(artista)
-})
-console.log(formregistro)
-
-
-
+}
