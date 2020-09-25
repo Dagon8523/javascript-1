@@ -8,9 +8,11 @@ let numeros=[1,2,3,4,5,6,7,8,9,0] */
 
 function inserletras(letra){
     let letrainput=letra
-    console.log(letrainput)
-
-    switch (letrainput) {
+    
+    let numletra=parseInt(letrainput)
+    console.log(numletra)
+    switch (numletra) {
+        
         case 1:
             inputletters.value="A"
         case 2:
