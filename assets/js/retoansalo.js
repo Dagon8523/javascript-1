@@ -32,7 +32,7 @@ function inserletras(letra){
         case 9:
             inputletters.value="I"
         case 0:
-            inputletters.value="HUPEUTA"                                
+            inputletters.value="J"                                
             
         break;
     
